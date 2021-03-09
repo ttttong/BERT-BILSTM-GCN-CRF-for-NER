@@ -2,9 +2,9 @@
 在原本BERT-BILSTM-CRF上融合GCN和词性标签等做NER任务
 ### 数据格式
         高 B-剧种 B-noun<br>
-腔 I-剧种 I-noun<br>
-： O O<br>
-马 B-人名 B-noun<br>
+        腔 I-剧种 I-noun<br>
+        ： O O<br>
+        马 B-人名 B-noun<br>
 平 I-人名 I-noun<br>
 所 O O<br>
 著 O B-verb<br>
