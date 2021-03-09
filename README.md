@@ -13,22 +13,22 @@
         小 O B-noun
         说 O I-noun
 ### 运行
-                python bert_gcn_ner.py
-    --do_lower_case=False
-    --do_train=False
-    --do_eval=False
-    --do_test=True
-    --dataset=opera2-pos3
-    --vocab_file=./chinese_L-12_H-768_A-12/vocab_update.txt
-    --bert_config_file=./chinese_L-12_H-768_A-12/bert_config.json
-    --init_checkpoint=./output3/bilstm_pos/model.ckpt-6720
-    --max_seq_length=128
-    --train_batch_size=32
-    --learning_rate=2e-5 
-    --num_train_epochs=10.0 
-    --dropout_rate=0.5 
-    --output_dir=./output3/bilstm_pos
-    --bilstm=True
-    --crf=True
-    --use_pos=True 
-    --gcn=1
+        python bert_gcn_ner.py
+                --do_lower_case=False
+                --do_train=False
+                --do_eval=False
+                --do_test=True
+                --dataset=opera2-pos3
+                --vocab_file=./chinese_L-12_H-768_A-12/vocab_update.txt
+                --bert_config_file=./chinese_L-12_H-768_A-12/bert_config.json
+                --init_checkpoint=./output3/bilstm_pos/model.ckpt-6720
+                --max_seq_length=128
+                --train_batch_size=32
+                --learning_rate=2e-5 
+                --num_train_epochs=10.0 
+                --dropout_rate=0.5 
+                --output_dir=./output3/bilstm_pos
+                --bilstm=True
+                --crf=True
+                --use_pos=True 
+                --gcn=1   # gcn=0/gcn=1 bilstm输入到gcn/gcn=2 bilstm+gcn
